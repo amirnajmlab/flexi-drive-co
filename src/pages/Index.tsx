@@ -27,7 +27,7 @@ const Index = () => {
       <section
         className="relative py-16 lg:py-24"
         style={{
-          backgroundImage: "url(https://onnnbeqeewfpgdcczgjm.supabase.co/storage/v1/object/public/BG/%20BG.jpg)",
+          backgroundImage: "url(https://onnnbeqeewfpgdcczgjm.supabase.co/storage/v1/object/public/BG/new%20hero-bg.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
