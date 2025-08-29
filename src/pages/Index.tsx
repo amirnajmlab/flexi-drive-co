@@ -17,7 +17,7 @@ const Index = () => {
           <div className="text-center mb-12">
             <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 animate-fade-in">
               Rent Your Perfect Car
-              <span className="block text-primary">Drive Your Dreams</span>
+              <span className="block text-yellow-500">Drive Your Dreams</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8 animate-slide-up">
               Choose from our premium fleet of modern, reliable vehicles. 
