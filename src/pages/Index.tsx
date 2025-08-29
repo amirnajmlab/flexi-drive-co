@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import BookingForm from "@/components/BookingForm";
 import CarCard from "@/components/CarCard";
 import { cars } from "@/data/cars";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const Index = () => {
   const featuredCars = cars.slice(0, 3);
@@ -12,7 +13,10 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-16 lg:py-24" style={{ backgroundImage: 'url(/src/assets/hero-bg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <section
+        className="relative py-16 lg:py-24"
+        style={{ backgroundImage: `url(${heroBg})`, backgroundSize: "cover", backgroundPosition: "center" }}
+      >
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 animate-fade-in">
