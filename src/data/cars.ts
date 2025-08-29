@@ -1,10 +1,3 @@
-// Import car images
-import chevySpark from "@/assets/chevy-spark.jpg";
-import hyundaiAccent from "@/assets/hyundai-accent.jpg";
-import hyundaiElantra from "@/assets/hyundai-elantra.jpg";
-import nissanAltima from "@/assets/nissan-altima.jpg";
-import hyundaiTucson from "@/assets/hyundai-tucson.jpg";
-
 export interface Car {
   id: string;
   category: string;
@@ -32,7 +25,7 @@ export const cars: Car[] = [
     transmission: "Automatic",
     minAge: 21,
     mpg: "27-35",
-    image: chevySpark,
+    image: "https://onnnbeqeewfpgdcczgjm.supabase.co/storage/v1/object/sign/img/car/Chevrolet_Spark_.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xNzI4ZWQ3MC1mYTg1LTRlNGMtOWRhYy03NzBmZDBjYTZmZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJpbWcvY2FyL0NoZXZyb2xldF9TcGFya18ud2VicCIsImlhdCI6MTc1NjUwNzUxOSwiZXhwIjoxNzU3MTEyMzE5fQ.KzPkvZTmYwaqP5dkV4A2FjdFiyiI6pUSNdU7_c0LKfA",
     description: "Zip through the city with our Chevy Spark — a compact and fuel-efficient car perfect for urban adventures. With nimble handling, modern features, and surprising interior space, this small but mighty hatchback makes every drive easy and fun. Whether you need a quick commute or a budget-friendly rental, the Spark has you covered.",
     features: ["Fuel Efficient", "City Friendly", "Easy Parking", "Modern Tech"],
     pricePerDay: 31,
@@ -55,7 +48,7 @@ export const cars: Car[] = [
     transmission: "Automatic",
     minAge: 21,
     mpg: "27-35",
-    image: hyundaiAccent,
+    image: "https://onnnbeqeewfpgdcczgjm.supabase.co/storage/v1/object/sign/img/car/Hyundai_Accent_.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xNzI4ZWQ3MC1mYTg1LTRlNGMtOWRhYy03NzBmZDBjYTZmZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJpbWcvY2FyL0h5dW5kYWlfQWNjZW50Xy53ZWJwIiwiaWF0IjoxNzU2NTA3NTI5LCJleHAiOjE3NTcxMTIzMjl9.86_nZDSD2ZatVYRmblxqJaIViW6EX0RLmNH5iwCHmfo",
     description: "Drive with ease and efficiency in our Hyundai Accent — the perfect compact car for both city streets and longer drives. With its sleek design, fuel efficiency, and comfortable interior, the Accent offers a smooth ride without compromising on space. Ideal for solo travelers or small groups.",
     features: ["Spacious Interior", "Fuel Efficient", "Smooth Ride", "Tech Features"],
     pricePerDay: 35,
@@ -78,7 +71,7 @@ export const cars: Car[] = [
     transmission: "Automatic",
     minAge: 21,
     mpg: "33-43",
-    image: hyundaiElantra,
+    image: "https://onnnbeqeewfpgdcczgjm.supabase.co/storage/v1/object/sign/img/car/Hyundai_Elantra_.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xNzI4ZWQ3MC1mYTg1LTRlNGMtOWRhYy03NzBmZDBjYTZmZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJpbWcvY2FyL0h5dW5kYWlfRWxhbnRyYV8ud2VicCIsImlhdCI6MTc1NjUwNzUzNywiZXhwIjoxNzU3MTEyMzM3fQ.bQLKsqm6ouMkjQa9BjbeW2Z2czsE-XBVdWV9wIZBt3k",
     description: "Drive in style and efficiency with our Hyundai Elantra — a sleek sedan designed for comfort and fuel savings. With its spacious interior, smooth handling, and advanced tech features, it's perfect for city commutes or weekend getaways.",
     features: ["Premium Interior", "Advanced Tech", "Excellent MPG", "Smooth Handling"],
     pricePerDay: 45,
@@ -101,7 +94,7 @@ export const cars: Car[] = [
     transmission: "Automatic",
     minAge: 25,
     mpg: "28-39",
-    image: nissanAltima,
+    image: "https://onnnbeqeewfpgdcczgjm.supabase.co/storage/v1/object/sign/img/car/Nissan_Altima_.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xNzI4ZWQ3MC1mYTg1LTRlNGMtOWRhYy03NzBmZDBjYTZmZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJpbWcvY2FyL05pc3Nhbl9BbHRpbWFfLndlYnAiLCJpYXQiOjE3NTY1MDc1NTUsImV4cCI6MTc1NzExMjM1NX0.En62VuavKgotJDR51sls0hkP9gsgfJsQ6gBdkZy2YxA",
     description: "Enjoy a smooth and efficient ride with our Nissan Altima — a stylish sedan built for comfort, performance, and reliability. With its spacious interior, advanced safety features, and responsive handling, this car is perfect for city commutes and long road trips.",
     features: ["Spacious Cabin", "Advanced Safety", "Premium Comfort", "Powerful Engine"],
     pricePerDay: 55,
@@ -124,7 +117,7 @@ export const cars: Car[] = [
     transmission: "Automatic", 
     minAge: 25,
     mpg: "26-33",
-    image: hyundaiTucson,
+    image: "https://onnnbeqeewfpgdcczgjm.supabase.co/storage/v1/object/sign/img/car/Hyundai_Tucson.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xNzI4ZWQ3MC1mYTg1LTRlNGMtOWRhYy03NzBmZDBjYTZmZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJpbWcvY2FyL0h5dW5kYWlfVHVjc29uLndlYnAiLCJpYXQiOjE3NTY1MDc1NDgsImV4cCI6MTc1NzExMjM0OH0.9VwDQnvqgcsvrJ9ow9IPrB0e3txf-AIM6xqbyjvS4VM",
     description: "Drive with confidence in our Hyundai Tucson — a versatile and stylish SUV ready for any adventure. With its spacious interior, advanced safety features, and smooth handling, the Tucson is perfect for city driving or weekend getaways.",
     features: ["Higher Seating", "Cargo Space", "All-Weather Ready", "Advanced Safety"],
     pricePerDay: 65,
