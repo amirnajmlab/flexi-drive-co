@@ -14,7 +14,7 @@ const Index = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section
-        className="relative py-16 lg:py-24"
+        className="relative bg-black py-16 lg:py-24"
         style={{ backgroundImage: `url(${heroBg})`, backgroundSize: "cover", backgroundPosition: "center" }}
       >
         <div className="container mx-auto px-4 lg:px-8">
