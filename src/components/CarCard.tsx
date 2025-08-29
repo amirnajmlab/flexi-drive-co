@@ -12,11 +12,11 @@ interface CarCardProps {
 const CarCard = ({ car }: CarCardProps) => {
   return (
     <Card className="group overflow-hidden hover:shadow-brand transition-all duration-300 hover:-translate-y-1 animate-fade-in">
-      <div className="aspect-[4/3] overflow-hidden">
+      <div className="aspect-[4/3] overflow-hidden flex items-center justify-center">
         <img
           src={car.image}
           alt={car.name}
-          className="w-4/5 h-4/5 object-cover mx-auto group-hover:scale-105 transition-transform duration-300"
+          className="max-w-[80%] max-h-[80%] object-contain mx-auto group-hover:scale-105 transition-transform duration-300"
         />
       </div>
       
