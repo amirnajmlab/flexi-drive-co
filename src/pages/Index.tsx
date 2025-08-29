@@ -56,22 +56,6 @@ const Index = () => {
 
           {/* Booking Form */}
           <div className="animate-scale-in">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-              {/* Example booking fields - replace with actual BookingForm fields if needed */}
-              <div className="bg-white rounded-lg p-4 border border-green-600" style={{ borderWidth: '1px' }}>
-                <span className="block text-sm font-semibold text-foreground mb-2">Vehicle Type</span>
-                {/* Replace with actual input/select */}
-                <span className="block text-muted-foreground">Select type...</span>
-              </div>
-              <div className="bg-white rounded-lg p-4 border border-green-600" style={{ borderWidth: '1px' }}>
-                <span className="block text-sm font-semibold text-foreground mb-2">Pickup Location</span>
-                <span className="block text-muted-foreground">Choose location...</span>
-              </div>
-              <div className="bg-white rounded-lg p-4 border border-green-600" style={{ borderWidth: '1px' }}>
-                <span className="block text-sm font-semibold text-foreground mb-2">Date & Time</span>
-                <span className="block text-muted-foreground">Select date...</span>
-              </div>
-            </div>
             <BookingForm />
           </div>
         </div>

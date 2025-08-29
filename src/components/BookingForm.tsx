@@ -21,12 +21,12 @@ const BookingForm = () => {
   };
 
   return (
-    <Card className="w-full max-w-6xl mx-auto shadow-brand">
+    <Card className="w-full max-w-6xl mx-auto shadow-brand border border-green-600" style={{ borderWidth: '1px', borderColor: '#15803d' }}>
       <CardContent className="p-6 md:p-8">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Vehicle Type */}
-            <div className="space-y-2">
+            <div className="space-y-2 border border-green-600 rounded-lg p-4 bg-white" style={{ borderWidth: '1px', borderColor: '#15803d' }}>
               <Label htmlFor="vehicle-type" className="text-sm font-medium flex items-center gap-2">
                 <Car className="h-4 w-4 text-primary" />
                 Vehicle Type
@@ -46,7 +46,7 @@ const BookingForm = () => {
             </div>
 
             {/* Pickup Date */}
-            <div className="space-y-2">
+            <div className="space-y-2 border border-green-600 rounded-lg p-4 bg-white" style={{ borderWidth: '1px', borderColor: '#15803d' }}>
               <Label htmlFor="pickup-date" className="text-sm font-medium flex items-center gap-2">
                 <Calendar className="h-4 w-4 text-primary" />
                 Pickup Date
@@ -61,7 +61,7 @@ const BookingForm = () => {
             </div>
 
             {/* Return Date */}
-            <div className="space-y-2">
+            <div className="space-y-2 border border-green-600 rounded-lg p-4 bg-white" style={{ borderWidth: '1px', borderColor: '#15803d' }}>
               <Label htmlFor="return-date" className="text-sm font-medium flex items-center gap-2">
                 <Calendar className="h-4 w-4 text-primary" />
                 Return Date
@@ -76,7 +76,7 @@ const BookingForm = () => {
             </div>
 
             {/* Location */}
-            <div className="space-y-2">
+            <div className="space-y-2 border border-green-600 rounded-lg p-4 bg-white" style={{ borderWidth: '1px', borderColor: '#15803d' }}>
               <Label htmlFor="location" className="text-sm font-medium flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-primary" />
                 Pickup Location
