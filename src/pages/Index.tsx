@@ -31,7 +31,7 @@ const Index = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          backgroundColor: "#E7E7E7"
+          backgroundColor: "#fff"
         }}
       >
         <div className="container mx-auto px-4 lg:px-8">
@@ -62,7 +62,7 @@ const Index = () => {
       </section>
 
       {/* Featured Fleet */}
-      <section className="py-16 lg:py-24" style={{ backgroundColor: '#E7E7E7' }}>
+      <section className="py-16 lg:py-24" style={{ backgroundColor: '#fff' }}>
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
@@ -90,7 +90,7 @@ const Index = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 lg:py-24 bg-surface-elevated" style={{ backgroundColor: '#E7E7E7' }}>
+      <section className="py-16 lg:py-24 bg-surface-elevated" style={{ backgroundColor: '#fff' }}>
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
