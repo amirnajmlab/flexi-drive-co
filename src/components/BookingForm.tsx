@@ -22,7 +22,7 @@ const BookingForm = () => {
 
   return (
     <Card className="w-full max-w-6xl mx-auto shadow-brand border border-green-600" style={{ borderWidth: '1px', borderColor: '#15803d' }}>
-      <CardContent className="p-6 md:p-8">
+      <CardContent className="p-6 md:p-8 backdrop-blur-lg bg-white/60">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Vehicle Type */}
