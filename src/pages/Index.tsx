@@ -35,7 +35,7 @@ const Index = () => {
               style={{
                 opacity: 0.2,
                 transform: 'translateY(-40px)',
-                transition: 'opacity 0.5s ease, transform 0.5s ease',
+                transition: 'opacity 1s ease, transform 1s ease',
               }}
               id="hero-motion-title"
             >
