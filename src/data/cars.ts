@@ -35,7 +35,7 @@ export const cars: Car[] = [
     image: chevySpark,
     description: "Zip through the city with our Chevy Spark — a compact and fuel-efficient car perfect for urban adventures. With nimble handling, modern features, and surprising interior space, this small but mighty hatchback makes every drive easy and fun. Whether you need a quick commute or a budget-friendly rental, the Spark has you covered.",
     features: ["Fuel Efficient", "City Friendly", "Easy Parking", "Modern Tech"],
-    pricePerDay: 29,
+    pricePerDay: 31,
     faq: [
       { question: "What is an economy car?", answer: "A compact, fuel-efficient vehicle designed for budget-conscious travelers." },
       { question: "Are they easy to drive in busy cities?", answer: "Absolutely, compact size makes them perfect for city driving and easy parking." },
