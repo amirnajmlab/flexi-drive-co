@@ -16,7 +16,7 @@ const CarCard = ({ car }: CarCardProps) => {
         <img
           src={car.image}
           alt={car.name}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          className="w-4/5 h-4/5 object-cover mx-auto group-hover:scale-105 transition-transform duration-300"
         />
       </div>
       
