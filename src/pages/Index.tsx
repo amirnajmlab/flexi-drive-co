@@ -26,7 +26,13 @@ const Index = () => {
       {/* Hero Section */}
       <section
         className="relative py-16 lg:py-24"
-        style={{ backgroundImage: 'url(https://onnnbeqeewfpgdcczgjm.supabase.co/storage/v1/object/sign/img/hero-bg.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xNzI4ZWQ3MC1mYTg1LTRlNGMtOWRhYy03NzBmZDBjYTZmZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJpbWcvaGVyby1iZy5wbmciLCJpYXQiOjE3NTY1MDY2NzAsImV4cCI6MTc3MTExNDcwfQ.EvjJlG3OTwUhoTpc2aItRkmdSqVzyny52nv8AsMmKTU)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: '#E7E7E7' }}
+        style={{
+          backgroundImage: "url(https://onnnbeqeewfpgdcczgjm.supabase.co/storage/v1/object/public/BG/%20BG.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundColor: "#E7E7E7"
+        }}
       >
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
