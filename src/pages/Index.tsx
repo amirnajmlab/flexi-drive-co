@@ -6,9 +6,20 @@ import BookingForm from "@/components/BookingForm";
 import CarCard from "@/components/CarCard";
 import { cars } from "@/data/cars";
 import heroBg from "@/assets/hero-bg.jpg";
+import { useEffect } from "react";
 
 const Index = () => {
   const featuredCars = cars.slice(0, 3);
+
+  useEffect(() => {
+    const el = document.getElementById("hero-motion-title");
+    if (el) {
+      setTimeout(() => {
+        el.style.opacity = "1";
+        el.style.transform = "translateY(0)";
+      }, 100);
+    }
+  }, []);
 
   return (
     <div className="min-h-screen">
@@ -19,7 +30,15 @@ const Index = () => {
       >
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 animate-fade-in">
+            <h1
+              className="text-4xl lg:text-6xl font-bold text-foreground mb-6 animate-fade-in"
+              style={{
+                opacity: 0.2,
+                transform: 'translateY(-40px)',
+                transition: 'opacity 0.5s ease, transform 0.5s ease',
+              }}
+              id="hero-motion-title"
+            >
               Rent Your Perfect Car
               <span className="block text-yellow-500">Drive Your Dreams</span>
             </h1>
