@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import { CheckCircle, Users, Shield, Clock, MapPin, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -25,7 +26,7 @@ const Index = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section
-        className="relative py-16 lg:py-24"
+        className="relative min-h-[80vh] flex items-center justify-center px-4 lg:px-0"
         style={{
           backgroundImage: "url(https://onnnbeqeewfpgdcczgjm.supabase.co/storage/v1/object/public/BG/new%20hero-bg.jpg)",
           backgroundSize: "cover",
@@ -34,28 +35,24 @@ const Index = () => {
           backgroundColor: "#fff"
         }}
       >
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-12">
-            <h1
-              className="text-4xl lg:text-6xl font-bold text-foreground mb-6 animate-fade-in"
-              style={{
-                opacity: 0.2,
-                transform: 'translateY(-40px)',
-                transition: 'opacity 1s ease, transform 1s ease',
-              }}
-              id="hero-motion-title"
-            >
-              Rent Your Perfect Car
-              <span className="block text-yellow-500">Drive Your Dreams</span>
-            </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8 animate-slide-up">
-              Choose from our premium fleet of modern, reliable vehicles. 
-              Perfect for any journey, any destination.
-            </p>
-          </div>
-
-          {/* Booking Form */}
-          <div className="animate-scale-in">
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm z-0" />
+        <div className="relative z-10 w-full max-w-2xl mx-auto text-center flex flex-col items-center justify-center py-20">
+          <h1
+            className="text-5xl lg:text-7xl font-extrabold text-white mb-6 tracking-tight drop-shadow-lg animate-fade-in"
+            style={{
+              opacity: 0.2,
+              transform: 'translateY(-40px)',
+              transition: 'opacity 1s ease, transform 1s ease',
+            }}
+            id="hero-motion-title"
+          >
+            Rent Your Perfect Car
+            <span className="block text-yellow-400 text-3xl lg:text-4xl mt-2 font-light">Drive Your Dreams</span>
+          </h1>
+          <p className="text-lg lg:text-xl text-white/80 max-w-xl mx-auto mb-8 animate-slide-up">
+            Choose from our premium fleet of modern, reliable vehicles. Perfect for any journey, any destination.
+          </p>
+          <div className="w-full mt-4">
             <BookingForm />
           </div>
         </div>
@@ -65,7 +62,7 @@ const Index = () => {
       <section className="py-16 lg:py-24" style={{ backgroundColor: '#fff' }}>
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 tracking-tight">
               Our Featured Fleet
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -81,7 +78,7 @@ const Index = () => {
 
           <div className="text-center">
             <Link to="/fleet">
-              <Button size="lg" className="bg-gradient-primary hover:bg-primary-hover">
+              <Button size="lg" className="bg-gradient-to-r from-green-500 to-yellow-400 text-white font-bold shadow-lg hover:scale-105 transition-transform">
                 View Complete Fleet
               </Button>
             </Link>
@@ -90,10 +87,10 @@ const Index = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 lg:py-24 bg-surface-elevated" style={{ backgroundColor: '#fff' }}>
+      <section className="py-16 lg:py-24" style={{ backgroundColor: '#fff' }}>
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 tracking-tight">
               Why Choose DriveNow?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -102,85 +99,26 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="text-center hover:shadow-soft transition-all duration-300 hover:-translate-y-1">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <CheckCircle className="h-8 w-8 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold mb-4">Easy Booking</h3>
-                <p className="text-muted-foreground">
-                  Simple online booking process with instant confirmation and flexible pickup options.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center hover:shadow-soft transition-all duration-300 hover:-translate-y-1">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Users className="h-8 w-8 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold mb-4">24/7 Support</h3>
-                <p className="text-muted-foreground">
-                  Round-the-clock customer support to assist you whenever you need help.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center hover:shadow-soft transition-all duration-300 hover:-translate-y-1">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Shield className="h-8 w-8 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold mb-4">Safe & Secure</h3>
-                <p className="text-muted-foreground">
-                  All vehicles regularly maintained and sanitized for your safety and peace of mind.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center hover:shadow-soft transition-all duration-300 hover:-translate-y-1">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Clock className="h-8 w-8 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold mb-4">Flexible Hours</h3>
-                <p className="text-muted-foreground">
-                  Extended pickup and return hours to accommodate your schedule.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center hover:shadow-soft transition-all duration-300 hover:-translate-y-1">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <MapPin className="h-8 w-8 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold mb-4">Multiple Locations</h3>
-                <p className="text-muted-foreground">
-                  Convenient pickup locations throughout the city including airport terminals.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center hover:shadow-soft transition-all duration-300 hover:-translate-y-1">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Star className="h-8 w-8 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold mb-4">Premium Quality</h3>
-                <p className="text-muted-foreground">
-                  Modern fleet with latest models, advanced safety features, and premium comfort.
-                </p>
-              </CardContent>
-            </Card>
+            {/* Minimal icon cards */}
+            {[{icon:CheckCircle,title:'Easy Booking',desc:'Simple online booking process with instant confirmation and flexible pickup options.'},{icon:Users,title:'24/7 Support',desc:'Round-the-clock customer support to assist you whenever you need help.'},{icon:Shield,title:'Safe & Secure',desc:'All vehicles regularly maintained and sanitized for your safety and peace of mind.'},{icon:Clock,title:'Flexible Hours',desc:'Extended pickup and return hours to accommodate your schedule.'},{icon:MapPin,title:'Multiple Locations',desc:'Convenient pickup locations throughout the city including airport terminals.'},{icon:Star,title:'Premium Quality',desc:'Modern fleet with latest models, advanced safety features, and premium comfort.'}].map((item, idx) => (
+              <Card key={item.title} className="text-center border-none shadow-none bg-white/80">
+                <CardContent className="p-8 flex flex-col items-center">
+                  <div className="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                    {React.createElement(item.icon, { className: "h-8 w-8 text-green-600" })}
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2 text-foreground">{item.title}</h3>
+                  <p className="text-muted-foreground text-sm">{item.desc}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 lg:py-24 bg-gradient-primary text-primary-foreground">
+      <section className="py-16 lg:py-24 bg-gradient-to-r from-green-500 to-yellow-400 text-white">
         <div className="container mx-auto px-4 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4 tracking-tight">
             Ready to Hit the Road?
           </h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
@@ -188,12 +126,12 @@ const Index = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/fleet">
-              <Button size="lg" variant="secondary" className="min-w-[200px]">
+              <Button size="lg" variant="secondary" className="min-w-[200px] bg-white text-green-600 font-bold shadow-md hover:bg-green-100">
                 Browse Fleet
               </Button>
             </Link>
             <Link to="/contact">
-              <Button size="lg" className="min-w-[200px] bg-accent hover:bg-accent-hover text-accent-foreground">
+              <Button size="lg" className="min-w-[200px] bg-green-700 hover:bg-green-800 text-white font-bold shadow-md">
                 Contact Us
               </Button>
             </Link>
