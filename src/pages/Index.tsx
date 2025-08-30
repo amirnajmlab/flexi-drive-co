@@ -35,10 +35,10 @@ const Index = () => {
           backgroundColor: "#fff"
         }}
       >
-        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm z-0" />
-        <div className="relative z-10 w-full max-w-2xl mx-auto text-center flex flex-col items-center justify-center py-20">
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm z-0 animate-fade-in" />
+        <div className="relative z-10 w-full max-w-2xl mx-auto text-center flex flex-col items-center justify-center py-20 animate-slide-up">
           <h1
-            className="text-5xl lg:text-7xl font-extrabold text-white mb-6 tracking-tight drop-shadow-lg animate-fade-in"
+            className="text-5xl lg:text-7xl font-extrabold text-white mb-6 tracking-tight drop-shadow-lg animate-fade-in font-peyda-bold"
             style={{
               opacity: 0.2,
               transform: 'translateY(-40px)',
@@ -47,12 +47,12 @@ const Index = () => {
             id="hero-motion-title"
           >
             Rent Your Perfect Car
-            <span className="block text-yellow-400 text-3xl lg:text-4xl mt-2 font-light">Drive Your Dreams</span>
+            <span className="block text-yellow-400 text-3xl lg:text-4xl mt-2 font-light font-peyda-light">Drive Your Dreams</span>
           </h1>
-          <p className="text-lg lg:text-xl text-white/80 max-w-xl mx-auto mb-8 animate-slide-up">
+          <p className="text-lg lg:text-xl text-white/80 max-w-xl mx-auto mb-8 animate-slide-up font-peyda-regular">
             Choose from our premium fleet of modern, reliable vehicles. Perfect for any journey, any destination.
           </p>
-          <div className="w-full mt-4">
+          <div className="w-full mt-4 animate-fade-in">
             <BookingForm />
           </div>
         </div>
